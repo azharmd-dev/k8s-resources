@@ -2,8 +2,9 @@ apiVersion: v1
 kind: Pod 
 metadata:
   name: annotations-demo
-  project: robomart
-  environment: dev
+  labels:
+    project: robomart
+    environment: dev
   annotations: 
     github-url: "https://github.com/azharmd-dev"
     dockerhub-url: "https://hub.docker.com/repositories/azharmd"
