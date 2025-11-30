@@ -4,5 +4,7 @@ metadata:
   name: error-test
 spec:
   containers:
-    - name: nginx
-      image: nginx:1.29.3-alpinegggggg
+    # - name: nginx
+    #   image: nginx:1.29.3-alpinegggggg #Back-off pulling image error
+    - name: almalinux
+      image: almalinux:9
