@@ -1,0 +1,13 @@
+apiVersion: v1 
+kind: pod 
+metadata:
+  name: annotations-demo
+  project: robomart
+  environment: robomart-dev
+  annotations: 
+    github-url: "https://github.com/azharmd-dev"
+    dockerhub-url: "https://hub.docker.com/repositories/azharmd"
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.29.3-alpine
