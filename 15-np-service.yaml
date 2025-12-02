@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-nginx
+  name: frontend-np
 spec:
   type: NodePort
   selector: 
