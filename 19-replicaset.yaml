@@ -4,7 +4,9 @@ metadata:
   name: replicaset-demo
   labels:
     project: robomart
-    environment: dev
+    component: frontend
+    envionment: dev
+    purpose: loadbalancer
 spec:
   replicas: 3
   selector:
