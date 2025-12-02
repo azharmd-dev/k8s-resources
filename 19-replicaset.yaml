@@ -4,9 +4,7 @@ metadata:
   name: replicaset-demo
   labels:
     project: robomart
-    component: frontend
-    envionment: dev
-    purpose: loadbalancer
+    environment: dev
 spec:
   replicas: 3
   selector:
@@ -15,7 +13,11 @@ spec:
   template:
     metadata:
       labels:
-        tier: frontend
+      tier: frontend
+      project: robomart
+      component: frontend
+      envionment: dev
+      purpose: loadbalancer
     spec:
       containers:
       - name: nginx
