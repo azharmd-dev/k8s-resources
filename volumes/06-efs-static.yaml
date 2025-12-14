@@ -34,7 +34,7 @@ metadata:
     purpose: efs-static
 spec:
   containers:
-  - name: nginx
+  - name: nginxx
     image: nginx
     volumeMounts:
     - name: nginx-html
@@ -45,4 +45,3 @@ spec:
   - name: nginx-html
     persistentVolumeClaim:
       claimName: efs-static
-      
